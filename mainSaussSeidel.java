@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
-public class main {
+public class mainSaussSeidel {
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
