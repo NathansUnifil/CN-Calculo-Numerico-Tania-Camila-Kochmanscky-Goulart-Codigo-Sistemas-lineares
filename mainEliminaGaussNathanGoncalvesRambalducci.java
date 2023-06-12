@@ -94,7 +94,14 @@ public class mainEliminaGaussNathanGoncalvesRambalducci {
         float OneTwocopy = OneTwo;
         float OneThreecopy = OneThree;
         float TwoOnecopy = TwoOne;
-        float TwoTwoCopy = TwoTwo;
+        float TwoTwocopy = TwoTwo;
+        float TwoThreecopy = TwoThree;
+        float ThreeOnecopy = ThreeOne;
+        float ThreeTwocopy = ThreeTwo;
+        float ThreeThreecopy = ThreeThree;
+        float bOnecopy = bOne;
+        float bTwocopy = bTwo;
+        float bThreecopy = bThree;
 
         TwoOne = OneOnecopy;
         OneOne = TwoOnecopy;
@@ -162,6 +169,11 @@ public class mainEliminaGaussNathanGoncalvesRambalducci {
 
         //Multiplique a 2ª linha pelo 2 numero da primeira linha e Segunda coluna
 
+        TwoOnecopy = TwoOne;
+        TwoTwocopy = TwoTwo;
+        TwoThreecopy = TwoThree;
+        bTwocopy = bTwo;
+
         TwoOne = TwoOne * OneTwo;
         TwoTwo = TwoTwo * OneTwo;
         TwoThree = TwoThree * OneTwo;
@@ -176,7 +188,12 @@ public class mainEliminaGaussNathanGoncalvesRambalducci {
 
         // e recupere-a segunda linha
 
-        TwoOne = 0;
+        TwoOne = TwoOnecopy;
+        TwoTwo = TwoTwocopy;
+        TwoThree = TwoThreecopy;
+        bTwo = bTwoCopy;
+
+        //TwoOne = 0;
 
         //Multiplique a 2ª linha pelo numero da segunda coluna da 3 linha
 
@@ -199,6 +216,11 @@ public class mainEliminaGaussNathanGoncalvesRambalducci {
 
         ThreeThree = ThreeThree / pivo3;
 
+        ThreeOnecopy = ThreeOne;
+        ThreeTwocopy = ThreeTwo;
+        ThreeThreecopy = ThreeThree;
+        bThreecopy = bThree;
+
         //Multiplique a 3ª linha pelo numero da terceira coluna da terceira linha
 
         ThreeOne = ThreeOne * ThreeThree;
@@ -213,9 +235,10 @@ public class mainEliminaGaussNathanGoncalvesRambalducci {
         OneThree = -ThreeThree + OneThree;
         bOne = -bThree + bOne;
 
-        ThreeOne = 0;
-        ThreeTwo = 0;
-        ThreeThree = 1;
+        ThreeOne = ThreeOnecopy;
+        ThreeTwo = ThreeTwocopy;
+        ThreeThree = ThreeThreecopy;
+        bThree = bThreecopy;
 
         //Multiplique a 3ª linha pelo numero da terceira coluna da segunda linha
 
