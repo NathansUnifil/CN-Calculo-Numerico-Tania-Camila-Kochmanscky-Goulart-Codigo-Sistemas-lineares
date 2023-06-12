@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class EliminaGaussNathanGoncalvesRambalducci {
+public class mainEliminaGaussNathanGoncalvesRambalducci {
 
     public static void main(String[] args) {
 
